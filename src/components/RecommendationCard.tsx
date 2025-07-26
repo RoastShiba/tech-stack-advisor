@@ -229,7 +229,7 @@ export default function RecommendationCard({
       {/* Additional Tools */}
       {stack.additionalTools.length > 0 && (
         <div className="mb-6">
-          <h4 className="font-semibold neon-green mb-3" style={{ fontFamily: 'Orbitron, monospace' }}>&gt; ADDITIONAL_MODULES</h4>
+          <h4 className="font-semibold neon-green mb-3" style={{ fontFamily: 'Orbitron, monospace' }}>{'>'} ADDITIONAL_MODULES</h4>
           <div className="flex flex-wrap gap-2">
             {stack.additionalTools.map((tool, index) => (
               <Badge key={index} className="bg-gray-500/20 border border-gray-400 text-gray-300 font-mono">
@@ -242,7 +242,7 @@ export default function RecommendationCard({
 
       {/* Use Cases */}
       <div className="mb-6">
-        <h4 className="font-semibold neon-green mb-3" style={{ fontFamily: 'Orbitron, monospace' }}>&gt; OPTIMAL_USE_CASES</h4>
+        <h4 className="font-semibold neon-green mb-3" style={{ fontFamily: 'Orbitron, monospace' }}>{'>'} OPTIMAL_USE_CASES</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
           {stack.useCases.map((useCase, index) => (
             <div key={index} className="flex items-center text-sm text-green-300 font-mono">
@@ -255,7 +255,7 @@ export default function RecommendationCard({
 
       {/* Key Files */}
       <div className="mb-6">
-        <h4 className="font-semibold neon-green mb-3" style={{ fontFamily: 'Orbitron, monospace' }}>&gt; CORE_FILES_MANIFEST</h4>
+        <h4 className="font-semibold neon-green mb-3" style={{ fontFamily: 'Orbitron, monospace' }}>{'>'} CORE_FILES_MANIFEST</h4>
         <div className="bg-black/50 border border-green-500/30 rounded-lg p-3">
           <code className="text-sm text-green-400 font-mono">
             {stack.keyFiles.join(', ')}
